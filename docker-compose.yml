@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: react-fix
+    image: react-fix-app
+    build:
+      context: .
+    ports:
+      - 8080:80
