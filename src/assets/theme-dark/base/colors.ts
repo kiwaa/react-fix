@@ -1,7 +1,7 @@
 import { PaletteMode, PaletteOptions } from '@mui/material';
 
 export const colors: PaletteOptions = {
-    mode: "light" as PaletteMode,
+    mode: "dark" as PaletteMode,
 
     background: {
         default: "#24292e"
