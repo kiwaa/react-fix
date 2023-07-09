@@ -7,6 +7,7 @@ import {
   ThemeProvider,
   createTheme,
 } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { PaletteMode } from "@mui/material";
 import { ColorContext } from "../components/responsiive-app-bar/ColorContext";
 import { lightTheme } from '../assets/theme';

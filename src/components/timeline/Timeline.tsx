@@ -50,7 +50,7 @@ function Timeline({ values = [], onSelected }: TimelineProps) {
     return (
         <>
             <FormGroup>
-                <FormControlLabel control={<Switch onChange={handleHideAdminChange} checked={hideAdmin} />} label="Hide Admin messages?" />
+                <FormControlLabel control={<Switch onChange={handleHideAdminChange} checked={hideAdmin} />} label="Hide Session-level messages?" />
             </FormGroup>
 
             <div style={{ height: 600, width: '100%' }}>

@@ -34,7 +34,7 @@ function FixMessageViewer({ value }: FixMessageViewerProps) {
     return (
         <>
             <FormGroup>
-                <FormControlLabel control={<Switch onChange={handleHideHeaderTrailer} checked={hideHeaderTrailer} />} label="Hide Header and Trailer?" />
+                <FormControlLabel control={<Switch onChange={handleHideHeaderTrailer} checked={hideHeaderTrailer} />} label="Show only body?" />
             </FormGroup>
 
             <div style={{ height: 600, width: '100%' }}>
@@ -43,6 +43,9 @@ function FixMessageViewer({ value }: FixMessageViewerProps) {
                     columns={columns}
                     rowHeight={32}
                     hideFooter={true}
+                    getRowClassName={(params) =>
+                        params.indexRelativeToCurrentPage % 2 === 0 ? 'x-dg-row-even' : 'x-dg-row-odd'
+                    }
                 />
             </div>
         </>
