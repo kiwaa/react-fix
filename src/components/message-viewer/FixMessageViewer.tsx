@@ -6,11 +6,11 @@ import Chip from '@mui/material/Chip';
 import { DataGrid, GridColDef, GridRenderCellParams, GridRowModel } from '@mui/x-data-grid';
 import { FixMessage } from "../../models/FixMessage/FixMessage";
 
-type DetailProps = {
+type FixMessageViewerProps = {
     value: FixMessage
 };
 
-function Detail({ value }: DetailProps) {
+function FixMessageViewer({ value }: FixMessageViewerProps) {
     const [hideHeaderTrailer, setHideHeaderTrailer] = React.useState<boolean>(true);
 
     const columns: GridColDef[] = [
@@ -49,4 +49,4 @@ function Detail({ value }: DetailProps) {
     );
 }
 
-export default Detail;
+export default FixMessageViewer;

@@ -2,37 +2,12 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import SubtitlesIcon from '@mui/icons-material/Subtitles';
-import SwitchModeButton from "../switch-mode/SwitchModeButton";
+import ThemeToggle from "./ThemeToggle";
 
 function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-        null
-    );
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-        null
-    );
-
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
     return (
         <AppBar position="static">
             <Container maxWidth="xl">
@@ -58,7 +33,7 @@ function ResponsiveAppBar() {
                     <Box sx={{ flexGrow: 1 }} />
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <SwitchModeButton />
+                        <ThemeToggle />
                     </Box>
                 </Toolbar>
             </Container>
