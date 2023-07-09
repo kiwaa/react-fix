@@ -11,8 +11,8 @@ import {
 } from '@mui/material/styles';
 import { PaletteMode } from "@mui/material";
 import { ColorContext } from "../ColorContext";
-import { darkTheme, lightTheme } from '../theme';
-// import SwitchModeButton from "../components/switch-mode/SwitchModeButton";
+import { lightTheme } from '../assets/theme';
+import { darkTheme } from '../assets/theme-dark';
 import ResponsiveAppBar from '../components/responsiiveAppBar/ResponsiveAppBar';
 
 function App() {

@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+# FIX Visualizer
 
 Hacked together solution to visualize FIX messages on-prem / cloud without sending any potentially sensitive information over internet;
 
 ## Run as npm app locally
+`npm install`
 `npm start`
 
 it would be launched at `http://localhost:3000`
@@ -11,7 +12,6 @@ it would be launched at `http://localhost:3000`
 `docker-compose up`
 
 and then use `http://localhost:8080`
-
 
 ===
 
